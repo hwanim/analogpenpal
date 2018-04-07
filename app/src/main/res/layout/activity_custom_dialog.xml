@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/sendLetterConstLayout"
+        android:background="@drawable/roundborder"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendLetterWarning_kr"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/sendLetterWarning"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/sendLetterWarning"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/cantCancel_kr"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/yesBtn"
+            android:background="@drawable/button_hotdog_write"
+            android:layout_marginLeft="15dp"
+            android:text="@string/comfirm_kr"
+            android:gravity="center"
+            android:textColor="#FFF"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/noBtn"
+            android:background="@drawable/button_hotdog_write"
+            android:layout_marginRight="15dp"
+            android:text="@string/cancel_kr"
+            android:gravity="center"
+            android:textColor="#FFF"
+
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/setInterestsLayout"
+        android:background="@drawable/roundborder"
+        android:padding="20dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectInterests_kr"
+            android:id="@+id/interestInformTv"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <include
+            layout="@layout/interests_table_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/interestsConstLayout"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/interestInformTv"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            app:layout_constraintTop_toBottomOf="@id/interestsConstLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/settingCompleteBtn"
+            android:background="@drawable/longhotdog_button"
+            android:text="설정 완료"
+            android:gravity="center"
+            android:textColor="#FFF"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/loginLayout"
+        android:background="@drawable/roundborder"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginIdTv"
+            android:text="@string/id_kr"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginPwTv"
+            android:text="@string/password_kr"
+            app:layout_constraintTop_toBottomOf="@id/loginIdTv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginIdEt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginPwEt"
+            app:layout_constraintTop_toTopOf="@id/loginIdEt"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/loginBtn"
+            android:background="@drawable/button_hotdog_write"
+            android:text="@string/login_kr"
+            android:gravity="center"
+            android:textColor="#FFF"
+            />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

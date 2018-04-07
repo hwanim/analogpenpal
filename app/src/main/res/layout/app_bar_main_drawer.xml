@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.commontalks.analogpenpal.view.MainDrawerActivity"
+    >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/mainActivityToolbar"
+            >
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/icon_drawer"
+                    android:id="@+id/drawerOpenBtn"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mainActivityToolbarTitleTxt"
+                    app:layout_constraintTop_toTopOf="parent "
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="편지쓰기"
+                    android:visibility="gone"
+                    />
+                
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logo_title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/mainActivityToolbarTitleImage"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintTop_toTopOf="parent "
+                    app:layout_constraintBottom_toBottomOf="parent "
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/icon_newwrite"
+                    android:id="@+id/writeNewMailBtn"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <include layout="@layout/content_main_drawer" />
+
+</android.support.design.widget.CoordinatorLayout>

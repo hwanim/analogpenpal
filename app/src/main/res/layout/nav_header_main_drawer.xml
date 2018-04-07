@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    >
+
+    <ImageView
+        android:id="@+id/NavigationimageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/icon_noprofile"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+        <TextView
+            android:id="@+id/NavigationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="15sp"
+            android:text="Android Studio"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/NavigationNation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Korea"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/NavigationName"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="9sp"
+
+            />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_kr"
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/idTv"
+
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/idTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="20"
+                android:id="@+id/idEt"
+                android:hint="@string/idhinttxt_kr"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/password_kr"
+                app:layout_constraintTop_toBottomOf="@id/idEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/pwTv"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/pwTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="20"
+                android:id="@+id/pwEt"
+                android:hint="@string/pwhinttxt_kr"
+                android:inputType="textPassword"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/confirmpw_kr"
+                app:layout_constraintTop_toBottomOf="@id/pwEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/comfirmPwTv"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/comfirmPwTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="20"
+                android:id="@+id/comfirmPwEt"
+                android:hint="@string/pwconfrimhint_kr"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nation_kr"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/comfirmPwEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/nationTv"
+
+                />
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/nationTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/nationSpinner"
+                >
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_kr"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/nationSpinner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/nameTv"
+
+                />
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/nameTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="20"
+                android:id="@+id/nameEt"
+                android:hint="@string/namehinttxt_kr"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/age_kr"
+                app:layout_constraintTop_toBottomOf="@id/nameEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ageTv"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ageTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="2"
+                android:id="@+id/ageEt"
+                android:hint="@string/agehinttxt_kr"
+                android:inputType="numberDecimal"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/sex_kr"
+                app:layout_constraintTop_toBottomOf="@id/ageEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sexTv"
+                />
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="@drawable/hotdog_button"
+                app:layout_constraintTop_toBottomOf="@id/sexTv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/male_kr"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:id="@+id/maleTv"
+                />
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="@drawable/hotdog_button"
+                app:layout_constraintTop_toBottomOf="@id/sexTv"
+                app:layout_constraintLeft_toLeftOf="@id/maleTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="@string/female_kr"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:id="@+id/femaleTv"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

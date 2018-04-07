@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.commontalks.analogpenpal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_1_1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon_1_1"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme.penpalanalog">
+        <activity android:name=".view.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.RegisterActivity" />
+        <activity android:name=".view.WriteMailActivity" />
+        <activity
+            android:name=".view.MainDrawerActivity"
+            android:label="@string/title_activity_main_drawer" />
+        <activity android:name=".view.ProfilePhotoRegisterActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="net.ludus.analogpenpal.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".view.SettingActivity" />
+        <activity android:name=".view.LetterBoxActivity" />
+        <activity android:name=".view.UpgradeActivity" />
+        <activity android:name=".view.ReadMailActivity" />
+        <activity android:name=".view.SuggestFeedbackActivity" />
+        <activity android:name=".view.MakersActivity"></activity>
+    </application>
+
+</manifest>

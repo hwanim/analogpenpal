@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "590220693516",
+    "firebase_url": "https://analogpenpal.firebaseio.com",
+    "project_id": "analogpenpal",
+    "storage_bucket": "analogpenpal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590220693516:android:90f07545d157e2a3",
+        "android_client_info": {
+          "package_name": "net.commontalks.analogpenpal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590220693516-bhcc775iqg57dmgh4ov943841hsbsprb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABZ7-1k7hSj9jD3rnpGOeBQZDO-L0hrLo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

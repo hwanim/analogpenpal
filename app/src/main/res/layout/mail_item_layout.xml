@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box_mail"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:id="@+id/mailItemLayout"
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/icon_noprofile"
+        android:id="@+id/sendUserProfilePhoto"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from"
+        app:layout_constraintLeft_toRightOf="@id/sendUserProfilePhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="8sp"
+        android:id="@+id/fromTv"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/sendUserProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@id/fromTv"
+        android:layout_marginLeft="15dp"
+        android:text="Yerim Kim"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:id="@+id/sendUserName"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/sendUserProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@id/sendUserName"
+        android:layout_marginLeft="15dp"
+        android:text="Korea"
+        android:textSize="10sp"
+        android:id="@+id/sendUserNation"
+        />
+
+
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_noprofile"
+        android:id="@+id/receiveUserProfilePhoto"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        app:layout_constraintRight_toLeftOf="@id/receiveUserProfilePhoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="8sp"
+        android:id="@+id/toTv"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/receiveUserProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@id/toTv"
+        android:layout_marginRight="15dp"
+        android:text="Yeri kim"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:id="@+id/receiveUserName"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/receiveUserProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@id/receiveUserName"
+        android:layout_marginRight="15dp"
+        android:text="Korea"
+        android:textSize="10sp"
+        android:id="@+id/receiveUserNation"
+        />
+    
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo_mailstamp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/mailstampImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="15"
+        android:textSize="10sp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="36dp"
+        android:rotation="345"
+        android:id="@+id/sendDateDay"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="JUNE"
+        android:textSize="10sp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="28dp"
+        android:rotation="345"
+        android:id="@+id/sendDateMonth"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="2018"
+        android:textSize="10sp"
+        android:layout_marginTop="46dp"
+        android:layout_marginRight="27dp"
+        android:rotation="345"
+        android:id="@+id/sendDateYear"
+        />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/icon_postoffice"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/postOfficeImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postOfficeDate"
+        app:layout_constraintTop_toBottomOf="@id/postOfficeImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:text="12-06-2018"
+        android:textSize="6sp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/icon_postbox"
+        android:layout_marginRight="60dp"
+        android:id="@+id/postBoxImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postBoxDate"
+        app:layout_constraintTop_toBottomOf="@id/postBoxImage"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="5dp"
+        android:text="12-06-2018"
+        android:textSize="6sp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/icon_air"
+        android:id="@+id/airplaneImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/airplaneDate"
+        app:layout_constraintTop_toBottomOf="@id/airplaneImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="12-08-2018"
+        android:textSize="6sp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
